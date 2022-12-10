@@ -12,6 +12,12 @@
 		DFB0133029444B16007DBA6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0132F29444B16007DBA6B /* ContentView.swift */; };
 		DFB0133229444B17007DBA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB0133129444B17007DBA6B /* Assets.xcassets */; };
 		DFB0133529444B17007DBA6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB0133429444B17007DBA6B /* Preview Assets.xcassets */; };
+		DFB0133D29444FCB007DBA6B /* Worldwide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0133C29444FCB007DBA6B /* Worldwide.swift */; };
+		DFB013402944503C007DBA6B /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0133F2944503C007DBA6B /* EndPoint.swift */; };
+		DFB0134229445200007DBA6B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0134129445200007DBA6B /* NetworkError.swift */; };
+		DFB0134429445224007DBA6B /* CovidApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0134329445224007DBA6B /* CovidApiService.swift */; };
+		DFB01348294453F6007DBA6B /* WorldWideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB01347294453F6007DBA6B /* WorldWideView.swift */; };
+		DFB0134A29445406007DBA6B /* WorldWideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0134929445406007DBA6B /* WorldWideViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		DFB0132F29444B16007DBA6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DFB0133129444B17007DBA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFB0133429444B17007DBA6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFB0133C29444FCB007DBA6B /* Worldwide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worldwide.swift; sourceTree = "<group>"; };
+		DFB0133F2944503C007DBA6B /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		DFB0134129445200007DBA6B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DFB0134329445224007DBA6B /* CovidApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidApiService.swift; sourceTree = "<group>"; };
+		DFB01347294453F6007DBA6B /* WorldWideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldWideView.swift; sourceTree = "<group>"; };
+		DFB0134929445406007DBA6B /* WorldWideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldWideViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +63,6 @@
 				907E9E34F689900F960DA6E5 /* Pods-CovidMVVM.debug.xcconfig */,
 				736E94D25DA1A7F7978CDE67 /* Pods-CovidMVVM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +87,9 @@
 		DFB0132C29444B16007DBA6B /* CovidMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				DFB01345294453E2007DBA6B /* Screen */,
+				DFB0133E29445013007DBA6B /* Networking */,
+				DFB0133B29444FA3007DBA6B /* Model */,
 				DFB0132D29444B16007DBA6B /* CovidMVVMApp.swift */,
 				DFB0132F29444B16007DBA6B /* ContentView.swift */,
 				DFB0133129444B17007DBA6B /* Assets.xcassets */,
@@ -90,6 +104,41 @@
 				DFB0133429444B17007DBA6B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFB0133B29444FA3007DBA6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFB0133C29444FCB007DBA6B /* Worldwide.swift */,
+				DFB0134129445200007DBA6B /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFB0133E29445013007DBA6B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DFB0133F2944503C007DBA6B /* EndPoint.swift */,
+				DFB0134329445224007DBA6B /* CovidApiService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DFB01345294453E2007DBA6B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DFB01346294453E8007DBA6B /* WorlWide */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DFB01346294453E8007DBA6B /* WorlWide */ = {
+			isa = PBXGroup;
+			children = (
+				DFB01347294453F6007DBA6B /* WorldWideView.swift */,
+				DFB0134929445406007DBA6B /* WorldWideViewModel.swift */,
+			);
+			path = WorlWide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB0134A29445406007DBA6B /* WorldWideViewModel.swift in Sources */,
 				DFB0133029444B16007DBA6B /* ContentView.swift in Sources */,
 				DFB0132E29444B16007DBA6B /* CovidMVVMApp.swift in Sources */,
+				DFB0134429445224007DBA6B /* CovidApiService.swift in Sources */,
+				DFB013402944503C007DBA6B /* EndPoint.swift in Sources */,
+				DFB0133D29444FCB007DBA6B /* Worldwide.swift in Sources */,
+				DFB0134229445200007DBA6B /* NetworkError.swift in Sources */,
+				DFB01348294453F6007DBA6B /* WorldWideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
