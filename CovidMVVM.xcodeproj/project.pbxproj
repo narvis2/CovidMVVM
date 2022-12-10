@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188B84B88D28B605FBC720A9 /* Pods_CovidMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04577A57A8E1E8BB85080470 /* Pods_CovidMVVM.framework */; };
 		DFB0132E29444B16007DBA6B /* CovidMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0132D29444B16007DBA6B /* CovidMVVMApp.swift */; };
 		DFB0133029444B16007DBA6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB0132F29444B16007DBA6B /* ContentView.swift */; };
 		DFB0133229444B17007DBA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB0133129444B17007DBA6B /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04577A57A8E1E8BB85080470 /* Pods_CovidMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		736E94D25DA1A7F7978CDE67 /* Pods-CovidMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidMVVM.release.xcconfig"; path = "Target Support Files/Pods-CovidMVVM/Pods-CovidMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		907E9E34F689900F960DA6E5 /* Pods-CovidMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidMVVM.debug.xcconfig"; path = "Target Support Files/Pods-CovidMVVM/Pods-CovidMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		DFB0132A29444B16007DBA6B /* CovidMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB0132D29444B16007DBA6B /* CovidMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidMVVMApp.swift; sourceTree = "<group>"; };
 		DFB0132F29444B16007DBA6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188B84B88D28B605FBC720A9 /* Pods_CovidMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		665050666B973A9D1AC26F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04577A57A8E1E8BB85080470 /* Pods_CovidMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA5F7B6737DC1A0F519217CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				907E9E34F689900F960DA6E5 /* Pods-CovidMVVM.debug.xcconfig */,
+				736E94D25DA1A7F7978CDE67 /* Pods-CovidMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DFB0132129444B16007DBA6B = {
 			isa = PBXGroup;
 			children = (
 				DFB0132C29444B16007DBA6B /* CovidMVVM */,
 				DFB0132B29444B16007DBA6B /* Products */,
+				CA5F7B6737DC1A0F519217CD /* Pods */,
+				665050666B973A9D1AC26F06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFB0133829444B17007DBA6B /* Build configuration list for PBXNativeTarget "CovidMVVM" */;
 			buildPhases = (
+				8D58762030B71FDC666F5C05 /* [CP] Check Pods Manifest.lock */,
 				DFB0132629444B16007DBA6B /* Sources */,
 				DFB0132729444B16007DBA6B /* Frameworks */,
 				DFB0132829444B16007DBA6B /* Resources */,
+				1DE061378C415232C4DE7111 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DE061378C415232C4DE7111 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CovidMVVM/Pods-CovidMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CovidMVVM/Pods-CovidMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CovidMVVM/Pods-CovidMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D58762030B71FDC666F5C05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CovidMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DFB0132629444B16007DBA6B /* Sources */ = {
@@ -261,6 +330,7 @@
 		};
 		DFB0133929444B17007DBA6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907E9E34F689900F960DA6E5 /* Pods-CovidMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +359,7 @@
 		};
 		DFB0133A29444B17007DBA6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 736E94D25DA1A7F7978CDE67 /* Pods-CovidMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
